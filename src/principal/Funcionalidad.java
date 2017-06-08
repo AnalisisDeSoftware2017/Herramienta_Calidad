@@ -172,7 +172,7 @@ public class Funcionalidad extends JFrame {
 				carac2 = get_puntaje(btnExcelente3,btnBueno3,btnRegular3,btnMalo3);
 				
 				if(carac1 && carac2){  // "si todas las subcaracterisitcas fueron calificadas"
-					JOptionPane.showMessageDialog(null, "Puntaje total de la caracteristica:"+ principal.puntajes.get(0) , "Puntaje", getDefaultCloseOperation());
+					JOptionPane.showMessageDialog(null, "Puntaje total de la caracteristica:"+ principal.puntajes.get(0)/2 , "Puntaje", getDefaultCloseOperation());
 					principal.btnFuncionalidad.setForeground(Color.RED);
 					principal.setVisible(true);
 					dispose();

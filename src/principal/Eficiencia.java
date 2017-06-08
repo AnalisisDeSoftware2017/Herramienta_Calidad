@@ -150,7 +150,7 @@ public class Eficiencia extends JFrame {
 				carac2 = get_puntaje(btnExcelente2,btnBueno2,btnRegular2,btnMalo2);
 				
 				if(carac1 && carac2){
-					JOptionPane.showMessageDialog(null, "Puntaje total de la caracteristica:"+ principal.puntajes.get(1) , "Puntaje", getDefaultCloseOperation());
+					JOptionPane.showMessageDialog(null, "Puntaje total de la caracteristica:"+ principal.puntajes.get(1)/2 , "Puntaje", getDefaultCloseOperation());
 					principal.setVisible(true);
 					principal.btnEficiencia.setForeground(Color.RED);
 					dispose();

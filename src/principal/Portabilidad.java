@@ -158,7 +158,7 @@ public class Portabilidad extends JFrame {
 				carac2 = get_puntaje(btnExcelente3,btnBueno3,btnRegular3,btnMalo3);
 				
 				if(carac1 && carac2){
-					JOptionPane.showMessageDialog(null, "Puntaje total de la caracteristica:"+ principal.puntajes.get(5) , "Puntaje", getDefaultCloseOperation());
+					JOptionPane.showMessageDialog(null, "Puntaje total de la caracteristica:"+ principal.puntajes.get(5)/2 , "Puntaje", getDefaultCloseOperation());
 					principal.btnPortabilidad.setForeground(Color.RED);
 					principal.setVisible(true);
 					dispose();

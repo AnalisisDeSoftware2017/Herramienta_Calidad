@@ -222,7 +222,7 @@ public class Usabilidad extends JFrame {
 				carac3 = get_puntaje(btnExcelente3,btnBueno3,btnRegular3,btnMalo3);
 				
 				if(carac1 && carac2 && carac3){
-					JOptionPane.showMessageDialog(null, "Puntaje total de la caracteristica:"+ principal.puntajes.get(4) , "Puntaje", getDefaultCloseOperation());
+					JOptionPane.showMessageDialog(null, "Puntaje total de la caracteristica:"+ Math.round(principal.puntajes.get(4)/3) , "Puntaje", getDefaultCloseOperation());
 					principal.btnUsabilidad.setForeground(Color.RED);
 					principal.setVisible(true);
 					dispose();

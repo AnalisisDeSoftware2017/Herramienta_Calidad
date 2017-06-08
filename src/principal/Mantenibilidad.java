@@ -197,7 +197,7 @@ public class Mantenibilidad extends JFrame {
 				carac3 = get_puntaje(btnExcelente3,btnBueno3,btnRegular3,btnMalo3);
 				
 				if(carac1 && carac2 && carac3){
-					JOptionPane.showMessageDialog(null, "Puntaje total de la caracteristica:"+ principal.puntajes.get(3) , "Puntaje", getDefaultCloseOperation());
+					JOptionPane.showMessageDialog(null, "Puntaje total de la caracteristica:"+ principal.puntajes.get(3)/3 , "Puntaje", getDefaultCloseOperation());
 					principal.btnMantenibilidad.setForeground(Color.RED);
 					principal.setVisible(true);
 					dispose();
